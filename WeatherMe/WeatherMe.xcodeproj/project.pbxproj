@@ -100,6 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8BD7B410244F547E008BD4EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F57F8E81242F4D8C008E27E8 /* ViewControllers */,
+				F59ED66F242FBF4A005F4285 /* CollectionViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BD7B411244F54D5008BD4EA /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F59ED66D242FB82B005F4285 /* Forecast.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		F57F8E38242F4788008E27E8 = {
 			isa = PBXGroup;
 			children = (
@@ -123,11 +140,11 @@
 		F57F8E43242F4788008E27E8 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				8BD7B411244F54D5008BD4EA /* View Models */,
+				8BD7B410244F547E008BD4EA /* Views */,
 				F57F8E7E242F4C92008E27E8 /* Extension */,
 				F57F8E7B242F49BD008E27E8 /* Model */,
 				F57F8E74242F48DD008E27E8 /* NetworkManager */,
-				F57F8E81242F4D8C008E27E8 /* Controllers */,
-				F59ED66F242FBF4A005F4285 /* Cell */,
 				F57F8E44242F4788008E27E8 /* AppDelegate.swift */,
 				F57F8E46242F4788008E27E8 /* SceneDelegate.swift */,
 				F57F8E4D242F4789008E27E8 /* Assets.xcassets */,
@@ -169,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				F57F8E7C242F49CC008E27E8 /* Weather.swift */,
-				F59ED66D242FB82B005F4285 /* Forecast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,23 +201,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		F57F8E81242F4D8C008E27E8 /* Controllers */ = {
+		F57F8E81242F4D8C008E27E8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				F57F8E48242F4788008E27E8 /* ViewController.swift */,
 				F59ED665242F8EC0005F4285 /* ForecastViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F59ED66F242FBF4A005F4285 /* Cell */ = {
+		F59ED66F242FBF4A005F4285 /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
 				F59ED670242FBF57005F4285 /* ForecastCell.swift */,
 				F59ED672242FBF7A005F4285 /* SelfConfiguringCell.swift */,
 				F51B40832430ADB5002EDBD7 /* HourlyCell.swift */,
 			);
-			path = Cell;
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
