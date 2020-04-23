@@ -82,13 +82,14 @@ class HourlyCell: UICollectionViewCell {
     
     func configure(with item: WeatherInfo) {
         let dateFormatterGet = DateFormatter()
+        dateFormatterGet.locale =  Locale(identifier: "en_US_POSIX")
         dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "HH:mm"
-
+        let dateFormatterSet = DateFormatter()
+        dateFormatterSet.dateFormat = "HH:mm"
+        
         if let date = dateFormatterGet.date(from: item.time) {
-            hourlyTimeLabel.text = dateFormatter.string(from: date)
+            hourlyTimeLabel.text = dateFormatterSet.string(from: date)
         }
         
         tempSymbol.loadImageFromURL(url: "http://openweathermap.org/img/wn/\(item.icon)@2x.png")
